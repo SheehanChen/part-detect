@@ -7,6 +7,6 @@
 /cut_image_merge
 
 cut_image.py
-Move_Pic.pygit rm -r --cached .
+Move_Pic.py
 Save_data.py
 
