@@ -6,7 +6,7 @@
 /test image
 /cut_image_merge
 
-/cut_image.py
-/Move_Pic.py
-/Save_data.py
+cut_image.py
+Move_Pic.pygit rm -r --cached .
+Save_data.py
 
