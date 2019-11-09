@@ -3,10 +3,13 @@
 ```bash
 pip install -r requirement.txt
 ```
-test image 下载地址
+### test image & model下载地址
 下载后解压缩到当前文件夹下。
 
-[google drive](https://drive.google.com/file/d/1wDn45WJyzXyUztv8T7hQDMwrPtobKeCp/view?usp=sharing)
+[百度云](https://pan.baidu.com/s/1krkLWQZt4C8o1Crgg0S42A)
+
+model也可以直接训练生成。
+
 
 ## 训练
 
