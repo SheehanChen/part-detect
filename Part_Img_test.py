@@ -1,9 +1,4 @@
-#!/usr/bin/env python 
-# -*- coding: utf-8 -*- 
-# @Time : 2018/11/12/012 15:45 
-# @Author : Farbror 
-# @File : Part_Img_test.py 
-# @Software: PyCharm
+
 '''
 
     这个版本加入了对零件尺寸的判断

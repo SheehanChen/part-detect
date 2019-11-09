@@ -1,9 +1,3 @@
-#!/usr/bin/env python 
-# -*- coding: utf-8 -*- 
-# @Time : 2018/11/10/010 15:50 
-# @Author : Farbror 
-# @File : Part_Img_train.py
-# @Software: PyCharm
 import os
 import cv2
 import numpy as np
