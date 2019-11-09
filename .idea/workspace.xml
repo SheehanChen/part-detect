@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e54002b-25ef-439a-b05e-bb6c5ef6def8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/机器学习大作业.md" beforeDir="false" afterPath="$PROJECT_DIR$/机器学习大作业.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573301563210</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gitignore &amp;&amp; README.md">
+      <created>1573302544605</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573302544605</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gitignore &amp;&amp; README.md">
+      <created>1573302897353</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573302897353</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +188,8 @@
     <MESSAGE value="imgae path" />
     <MESSAGE value="add test dataset" />
     <MESSAGE value="gitignore refresh" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore refresh" />
+    <MESSAGE value="gitignore &amp;&amp; README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore &amp;&amp; README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
