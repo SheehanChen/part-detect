@@ -31,89 +31,169 @@ run `Part_img_test.py`
 数据集是自己制作的，当时还不是很了解主流数据集结构和标注格式，就通过命名来直接对图像的对图像的种类进行标注。下面是数据集的结构，主要包括两个部分，分别是拍照得到的原始图像，和对使用相机标定后的参数对图像进行矫正后的图像。后面我们使用的都是去除相机畸变后的的图像。数据集的制作涉及了相机的标定，拍摄和命名保存等问题。
 
 ├── calibration
+
 │ ├── Flat washer_M22_39_3
+
 │ ├── Flat washer_M24_44_4
+
 │ ├── nut_1_8
+
 │ ├── nut_9_16_12
+
 │ ├── screw_bolt_M12_100
+
 │ ├── screw_bolt_M12_110
+
 │ ├── screw_bolt_M12_120
+
 │ ├── screw_bolt_M12_60
+
 │ ├── screw_bolt_M12_65
+
 │ ├── screw_bolt_M12_70
+
 │ ├── screw_bolt_M12_80
+
 │ ├── screw_bolt_M12_90
+
 │ ├── screw_M5_25
+
 │ ├── screw_M5_30
+
 │ ├── screw_M5_35
+
 │ ├── screw_M5_40
+
 │ ├── screw_M5_45
+
 │ ├── screw_M6_20
+
 │ ├── screw_M6_25
+
 │ ├── screw_M6_30
+
 │ ├── screw_M6_35
+
 │ ├── screw_M6_40
+
 │ ├── screw_M6_45
+
 │ ├── screw_M6_50
+
 │ ├── shoulder screw_M8_20
+
 │ ├── shoulder screw_M8_25
+
 │ ├── shoulder screw_M8_30
+
 │ ├── shoulder screw_M8_35
+
 │ ├── shoulder screw_M8_40
+
 │ ├── shoulder screw_M8_45
+
 │ ├── shoulder screw_M8_50
+
 │ ├── shoulder screw_M8_60
+
 │ ├── shoulder screw_M8_65
+
 │ ├── shoulder screw_M8_75
+
 │ ├── shoulder screw_M8_80
+
 │ ├── shoulder screw_M8_85
+
 │ ├── shoulder screw_M8_90
+
 │ ├── spring washer_M22
+
 │ └── spring washer_M24
+
 └── original
+
 ├── Flat washer_M22_39_3
+
 ├── Flat washer_M24_44_4
 ├── nut_1_8
+
 ├── nut_9_16_12
+
 ├── screw_bolt_M12_100
+
 ├── screw_bolt_M12_110
+
 ├── screw_bolt_M12_120
+
 ├── screw_bolt_M12_60
+
 ├── screw_bolt_M12_65
+
 ├── screw_bolt_M12_70
+
 ├── screw_bolt_M12_80
+
 ├── screw_bolt_M12_90
+
 ├── screw_M5_25
+
 ├── screw_M5_30
+
 ├── screw_M5_35
+
 ├── screw_M5_40
+
 ├── screw_M5_45
+
 ├── screw_M6_20
+
 ├── screw_M6_25
+
 ├── screw_M6_30
+
 ├── screw_M6_35
+
 ├── screw_M6_40
+
 ├── screw_M6_45
+
 ├── screw_M6_50
+
 ├── shoulder screw_M8_20
+
 ├── shoulder screw_M8_25
+
 ├── shoulder screw_M8_30
+
 ├── shoulder screw_M8_35
+
 ├── shoulder screw_M8_40
+
 ├── shoulder screw_M8_45
+
 ├── shoulder screw_M8_50
+
 ├── shoulder screw_M8_60
+
 ├── shoulder screw_M8_65
+
 ├── shoulder screw_M8_75
+
 ├── shoulder screw_M8_80
+
 ├── shoulder screw_M8_85
+
 ├── shoulder screw_M8_90
+
 ├── spring washer_M22
+
 └── spring washer_M24
+
 
 示例图片如下：
 
-(image-20191106201434275)[https://github.com/Chenxin9607/part-detect/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%A4%A7%E4%BD%9C%E4%B8%9A.assets/image-20191106201434275.png]
+![image-20191106201434275](https://user-images.githubusercontent.com/26670635/110235384-aebfd300-7f6a-11eb-9491-0de1f7dae0ee.png)
+
 
 分类模型
 根据提供的零件清单购置6大类40种不同型号的零件，使用sift特征+神经网络+尺寸特征进行分类。主要使用sift特征+神经网络分类器对不同种类的零件进行粗分类，输出结果后进入尺寸分类，通过尺寸阈值对不同型号的零件进行细分类。
@@ -121,7 +201,8 @@ run `Part_img_test.py`
 SIFT特征
 Sift特征提取分为6个环节如图：
 
-(image-20191106202358851)[https://github.com/Chenxin9607/part-detect/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%A4%A7%E4%BD%9C%E4%B8%9A.assets/image-20191106202358851.png]
+![image-20191106202358851](https://user-images.githubusercontent.com/26670635/110235390-b67f7780-7f6a-11eb-8579-bc1995155426.png)
+
 
 构建一个尺度空间
 
@@ -137,7 +218,8 @@ Sift特征提取分为6个环节如图：
 
 其中描述子的构建：
 
-(image-20191106202707502)[https://github.com/Chenxin9607/part-detect/blob/master/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%A4%A7%E4%BD%9C%E4%B8%9A.assets/image-20191106202707502.png]
+![image-20191106202707502](https://user-images.githubusercontent.com/26670635/110235396-bd0def00-7f6a-11eb-8ce4-0d2ec6773253.png)
+
 
 图4-2的左侧得到了一个关键点的特征方向，关键点周围刻画4*4的方格每个方格的特征方向也是使用梯度值进行计算的，方向360度/8，以45度为间隔每个方格的梯度值大小是不确定的。我们使用方向的大小，也就是向量的长度刻画这个梯度值的大小。（特征点周围由4*4的大方格，每个大方格中有4*4的小方格，由小方格的方向的个数来确定大方格的方向。）然后描述子的大小由4*4*8=128维的向量来描述单位是字节。
 
